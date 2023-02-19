@@ -1,3 +1,5 @@
+<br>
+
 # github-following-app
 
 Functional scripts for following users with the GitHub API
