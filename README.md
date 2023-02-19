@@ -45,9 +45,7 @@ If everything went right, it will throw out your variable
 <br>
 
 ### - followUsers
-This script will catch all the followers of a specific GitHub user and will start following them, one by one
-
-It can receives a user nickname as argument, otherwise it will look for the authenticated user
+This script will catch all the followers of a specific GitHub user and will start following them, one by one<br>It can receives a user nickname as argument, otherwise it will look for the authenticated user
 
 ### - unfollowWhoDoesNotFollowsMe
 This script will unfollow every GitHub user that is not following you (the authenticated user)
