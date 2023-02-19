@@ -7,11 +7,11 @@ Functional scripts for following users with the GitHub API
 <br>
 <br>
 
-In order to use this scripts, you need to have `Node.JS runtime` and some `JavaScript package manager` installed on your environment
+In order to use this scripts, you need to have `Node.JS runtime` and some `JavaScript package manager` installed on your system
 
 <br>
 
-Once you got it, clone this repo on your preferred location, e.g.:
+Once you have them, clone this repository to your preferred location by running the following commands:
 
 `cd c:/projects`
 
@@ -37,7 +37,7 @@ To make sure the file has been created:
 
 `cat .env`
 
-If everything went right, it will throw out your variable
+If everything goes well, it will output your token
 
 <br>
 
@@ -45,19 +45,17 @@ If everything went right, it will throw out your variable
 <br>
 
 ### - followUsers
-This script will catch all the followers of a specific GitHub user and will start following them, one by one
-<br>
-It can receives a user nickname as argument, otherwise it will look for the authenticated user
+This script fetches all the followers of a specific GitHub user and starts following them one by one. It can take a GitHub username as an argument, or it will use the authenticated user if none is provided
 
 ### - unfollowWhoDoesNotFollowsMe
-This script will unfollow every GitHub user that is not following you (the authenticated user)
+This script unfollows every GitHub user who is not following you (the authenticated user)
 
 ### - purgeFollowing
-This script will unfollow every GitHub user that the authenticated user is current following
+This script unfollows every GitHub user who the authenticated user is actually following
 
 <br>
 <br>
 
-To use any of the scripts, simply use the Node CLI along with the name of the script:
+To use any of the scripts, simply run the following command in your terminal:
 
 `node scriptName.mjs`
