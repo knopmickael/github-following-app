@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "octokit": "^2.0.14"
+  },
+  "script": {
+    "start": "node server.js"
+  }
+}
