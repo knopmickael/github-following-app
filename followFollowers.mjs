@@ -55,7 +55,7 @@ console.log();
 console.log(followers.length + ' followers from @' + user === undefined ? 'knopmickael' : user);
 console.log();
 
-// 5follow them
+// follow them
 let counter = 1;
 for (let follower of followers) {
   try {
@@ -68,9 +68,17 @@ for (let follower of followers) {
       counter++;
     }
 
-    if (counter % 40 === 0) {
+    const stopRunning = async seconds => {
       console.log('Stopping the counter at: ' + counter);
-      await new Promise(resolve => setTimeout(resolve, 60000));
+      await new Promise(resolve => setTimeout(resolve, seconds * 1000));
+    };
+
+    if (counter % 40 === 0) {
+      if (counter % 180 === 0)
+        stopRunning(300);
+      else if (counter % 360 === 0)
+        stopRunning(600);
+      else stopRunning(60);
     }
 
   } catch (followError) {
