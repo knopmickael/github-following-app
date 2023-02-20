@@ -44,7 +44,7 @@ If everything goes well, it will output your token
 ## Docs
 <br>
 
-### - followUsers
+### - followFollowers
 This script fetches all the followers of a specific GitHub user and starts following them one by one. It can take a GitHub username as an argument, or it will use the authenticated user if none is provided
 
 ### - unfollowWhoDoesNotFollowsMe
